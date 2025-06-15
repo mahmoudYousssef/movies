@@ -1,4 +1,3 @@
-import React from 'react' 
 import "./MovieCard.css"
 import MovieControls from './MovieControls'
 const MovieCard = ({movie, type}) => {
@@ -9,7 +8,7 @@ const MovieCard = ({movie, type}) => {
 
   </div>
   {movie.Poster ? (
-    <img src={movie.Poster} alt={movie.title} />
+    <img src={movie.Poster} alt={movie.Title} />
   ) : (
     <div className="filter-poster"></div>
   )}

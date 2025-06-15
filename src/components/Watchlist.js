@@ -1,7 +1,6 @@
-import React from 'react'
 import { useMovieContext } from './context/GlobalContext';
 import MovieCard from './MovieCard';
-import "./Watchlist.css"
+import "./Watchlist.css";
 
 const Watchlist = () => {
   const MovieContext = useMovieContext();

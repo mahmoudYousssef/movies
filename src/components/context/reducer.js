@@ -12,14 +12,14 @@ export const reducer = (state, action) => {
       return {
         ...state,
         watchlist: state.watchlist.filter(
-          (movie) => movie.imdbId !== action.payload
+          (movie) => movie.imdbID !== action.payload
         ),
       };
     case actions.Add_Movie_To_Watched:
       return {
         ...state,
         watchlist: state.watchlist.filter(
-          (movie) => movie.imdbId !== action.payload.imdbId
+          (movie) => movie.imdbID !== action.payload.imdbID
         ),
         watched: [action.payload, ...state.watched],
  
@@ -28,14 +28,14 @@ export const reducer = (state, action) => {
       return {
         ...state,
         watched: state.watched.filter( 
-          (movie) => movie.imdbId !== action.payload
+          (movie) => movie.imdbID !== action.payload
         ),
       };
     case actions.MOVIE_TO_WATCHLIST:
       return {
         ...state,
         watched: state.watched.filter(
-          (movie) => movie.imdbId !== action.payload.imdbId
+          (movie) => movie.imdbID !== action.payload.imdbID
         ),
         watchlist: [action.payload, ...state.watchlist],
       };
