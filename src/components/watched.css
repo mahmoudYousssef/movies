@@ -1,15 +1,16 @@
-.watch-list {
+/* Watched Component Styles */
+.watched {
   padding: 30px 0;
 }
 
-.watch-list .main-heading {
+.watched .main-heading {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 30px;
 }
 
-.movies-count {
+ .movies-count {
   display: block;
   background-color: var(--secondary);
   padding: 5px 15px;
@@ -19,7 +20,7 @@
   color: var(--primary);
 }
 
-.watch-list h1 {
+.watched h1 {
   color: var(--primary);
   margin: 0;
 }
@@ -27,18 +28,21 @@
 .movie-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px; 
-}
-
-@media (min-width: 992px) {
-  .movie-grid {
-    grid-template-columns: repeat(5, 1fr);
-  }
+  gap: 30px;
 }
 
 .no-movie {
   color: #c4c4c4;
-  font-size:3rem;
+  font-size: 3rem;
   text-align: center;
   margin-top: 100px;
+  width: 100%;
 }
+
+
+@media (min-width: 992px) {
+  .watched .movie-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
